@@ -1,0 +1,50 @@
+.el-popover.menus-popover {
+  cursor: pointer;
+  // width: 260px!important;
+  width: calc(100% - 30px) !important;
+  inset: 68px 10px auto 10px;
+  .menu-popover-list {
+    list-style: none;
+    background: #fff;
+    border: 1px solid #fff;
+    margin-top: 12px !important;
+    border-radius: 0;
+    min-width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px calc((100% - 1090px)/2);
+    .popover-list-item {
+      font-size: 16px;
+      font-weight: 600;
+      color: #000;
+      padding: 0 20px 0 10px;
+      display: flex;
+      align-items: center;
+      margin: 0 10px 40px;
+      height: 82px;
+      width: 330px;
+      box-sizing: border-box;
+      img {
+        width: 48px;
+        height: 55px;
+        margin-right: 8px;
+      }
+      span {
+        padding-bottom: 5px;
+      }
+      &:hover,
+      &.active {
+        opacity: 1;
+        background: #eff5ff;
+        border-radius: 10px;
+      }
+    }
+    .popper__arrow,
+    .popper__arrow::after {
+      border-bottom-color: #fff;
+    }
+    .el-popper__arrow {
+      display: none;
+    }
+  }
+}
